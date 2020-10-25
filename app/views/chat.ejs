@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <% include ./parts/head.ejs %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/style2.css">
+</head>
+<body>
+  <% include ./parts/header.ejs %>
+ <!--<ul id="hell0" class="list-unstyled"></ul>-->
+
+  <main>
+    <div class="container-fluid">
+      <input type="hidden" id="user" value="<%= user.username %>"/>
+      <div class="row">
+          <div class="col-4" id="userlist">
+            <div class="panel-body" id="scrl1">
+              <!--<h4 class="boxF">For Group Chat Click on Group Button and for One-to-One chat click on Username</h4>-->
+              <ul id="list" ></ul>
+            </div>
+          </div>
+        <div class="col-sm-8" id = "chatbox">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h4 id="frndName">Chat Room</h4>
+            </div>
+            <div class="panel-body" id="scrl2">
+              <p id="loading">Loading..... Please Wait.</p>
+              <p id="noChat">No More Chats To Display.....</p>
+              <p id="initMsg">!!...Click On User Or Group Button To Start Chat...!!</p>
+              <ul id="messages"></ul>
+            </div>
+
+            <div class="panel-footer">
+              <form id="chatForm" action="">
+                <input id="myMsg" class="input-box-send" autocomplete="off" placeholder="Write Message Here.." />
+                <button id="sendBtn" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-send"></span> <b>Send</b></button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="iframe-container"><iframe loading="lazy" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"></iframe></div>
+
+
+    <!--This is where the comment system starts-->
+    <div class = "row" id="commentsystem">
+      <div class="row mt-4">
+      </div>
+      <div class="row mb-4" id="commentsection">
+          <div class='col-md-12'>
+              <h4 class="border-bottom pb-2 ">Comments</h4>
+          </div>
+          <div class="col-md-8">
+              <div class="form-group">
+                  <label for="">Write comment</label>   
+                  <textarea id="textarea" class="form-control" rows="3"></textarea>             
+              </div>
+          </div>
+          <div class="col-md-12">
+              
+              <button id= "submitBtn" class="btn btn-primary float-right">Post Comment</button>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-md-12">
+              <div id="typing" class="typing text-success"></div>
+              <ul class="comment__box" >
+              </ul>
+          </div>
+      </div>
+  </div>
+  <!--This comment ends here-->
+   </div>
+  </div>
+  </main>
+ 
+
+    
+    
+  <% include ./parts/footer.ejs %>
+
+  <script src="/js/scriptForChat.js"></script>
+  <script src="socket.io/socket.io.js"></script>
+  <script src="/js/app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+</body>
+</html>

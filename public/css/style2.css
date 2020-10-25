@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@300;400;600;800&display=swap');
+
+body{
+    font-family: 'Muli',sans-serif;
+}
+
+.comment__box{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.comment__box .comment h6 {
+    font-weight: 800;
+}
+
+p{
+    font-size: 16px ;
+    color: white !important;
+}
+
+.comment{
+    animation: commentStyle .6s ease forwards;
+}
+
+#commentsystem {
+    text-align: left;
+    float: left;
+    margin: 15px;
+    width: 80%;
+}
+
+
+@keyframes commentStyle{
+    0%{
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+}
+
+

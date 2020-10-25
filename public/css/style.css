@@ -1,0 +1,312 @@
+* {
+  -webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+body{
+  background-color: #002233;
+  color: #000000;
+  font-size: 16px;
+  text-align: center;
+  align-items: center;
+/*background-attachment: fixed;*/
+/*background-position: center;*/
+}
+
+#ubtn{
+  margin-bottom: 10px;
+}
+
+.footer {
+    background-color: #292c2f;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    font: normal 18px sans-serif;
+    padding: 45px;
+    margin-top: -133px;
+}
+
+.footer .footer-motto {
+    color: #8d9093;
+    font-size: 24px;
+    margin: 0;
+}
+
+.footer .footer-name {
+    font-size: 14px;
+    margin: 0px;
+}
+
+.footer .footer-links {
+    list-style: none;
+    font-weight: bold;
+    color: cyan;
+    padding: 35px 0 23px;
+    margin: 0;
+}
+
+.footer .footer-links a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.login-screen{
+  background-color: #002233;
+
+}
+
+.login-box{
+  margin: auto;
+  margin-top: 3%;
+  width: 50%;
+  border-radius: 10px;
+  background-color: #1f80d0;
+}
+
+
+.login-form,
+.product-form{
+  width: 90%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.input-block{
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.input-block p{
+  text-align: center;
+  font-weight: bold;
+}
+
+.input-icon{
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  color: #8b9199;
+  background-color: #ffffff;
+}
+
+.input-box{
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  width: 75%;
+  border: 0;
+  background-color: #ffffff;
+  box-shadow: none;
+}
+
+.boxF{
+  margin: 5px;
+  font-weight: bold;
+  border-color: #292c2f;
+  border-radius: 5px;
+}
+
+.boxN{
+  padding: 15px;
+  display: inline-block;
+  margin: 5px;
+  font-weight: bold;
+  background-color: #1f80d0;
+  color: white;
+
+}
+/*Offline and Online*/
+.boxFl{
+  display: block;
+  margin: 5px;
+  border: 2px solid #1f80d0;
+  font-weight: bold;
+  text-align: left;
+  padding: 5px;
+}
+p{
+  font-weight: bold;
+}
+
+
+
+/*styling of chat panel body*/
+#scrl1{
+  height: 100vh;
+  overflow-y: auto;
+}
+#scrl2{
+  color: white;
+  height:275px;
+  overflow-y: auto;
+  background-color:#222;
+}
+
+#loading,
+#noChat,
+#chatForm{
+  display: none;
+}
+
+.input-box-send{
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  width: 75%;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  box-shadow: none;
+}
+
+
+#messages,
+#list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+}
+#messages li,
+#list li{
+  text-align: left;
+  width: auto;
+  /*background: #eee;*/
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+/*styling for error id tag*/
+#error1,
+#error2{
+  color: #e60000;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+#irf,
+#ik,#ik1,#ik2,
+#ir,#ir1,#ir2{
+  display: none;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+#ik,#ik1,#ik2{color: #009900;}
+#ir,#ir1,#ir2{color: #e60000;}
+
+#hell0{
+  display: block;
+  background-color: #31B0D5;
+  color: white;
+  margin-left: 20%;
+  margin-right: 20%;
+max-height: 100px;
+overflow-y:auto;
+
+}
+
+#userlist {
+  float: left;
+  margin-top: -30px;
+  background-color: #222;
+  height:150%;
+
+}
+
+div#userlist.col-sm-3 {
+  padding-right: 0px !important;
+}
+
+#chatbox {
+  float: right;
+  width:25%;
+  margin-top: -20px;
+  height: 50%;
+  padding: 0px;
+}
+
+.btn-success {
+  background-color:#222 ;
+  color: white;
+}
+
+.btn-success:hover {
+  background-color: rgb(53, 53, 53) !important;
+  border-color: rgb(53, 53, 53) !important;
+  color: white !important;
+}
+
+.col-sm-4 {
+  padding-right: 0px;
+}
+
+.col-sm-8 {
+  padding-left: 0px;
+}
+
+/*Group button*/
+.btn-danger {
+  background-color: #1f80d0 !important;
+  border-color: #1f80d0 !important;
+}
+
+.btn-danger:hover {
+  background-color: #31B0D5 !important;
+  border-color: #31B0D5 !important;
+}
+
+#totalOnline.badge {
+  margin-top: -2px !important;
+}
+
+/*comment section*/
+#commentsection {
+  color:white;
+}
+
+.comment__box {
+  color: white;
+}
+
+/*Video*/
+#video {
+  float: left;
+}
+
+.navbar-inverse {
+  background-color: #222 !important;
+  border: 1px solid transparent !important;
+}
+
+.panel-primary>.panel-heading {
+  background-color: #114455 !important;
+  border-color:#114455 !important;
+}
+
+.panel {
+  border-color: #222 !important;
+}
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 33.3333333333333333333333333%;
+  position: relative;
+  margin-top: -20px;
+}
+
+.iframe-container iframe {
+  border: 3;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
